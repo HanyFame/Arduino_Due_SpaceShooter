@@ -99,7 +99,7 @@ void drawTargets(int y)
   if (targetfall >= 47)
   {
     for (i=0; i<3; ++i)
-    targetHits[i] = 0;
+    targetHits[i] = 1;
     hitCounts[i] = 0;
     tft.fillCircle(target[0], 4*(y), 4, ILI9341_BLACK);
     tft.fillCircle(target[1], 4*(y), 4, ILI9341_BLACK);
