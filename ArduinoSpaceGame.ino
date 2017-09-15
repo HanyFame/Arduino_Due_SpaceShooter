@@ -220,7 +220,8 @@ void loop()
         tft.drawLine(135+(8*location)+26, 140, 135+(8*location)+26, 0, ILI9341_BLACK);
         tft.drawLine(135+(8*location)+27, 140, 135+(8*location)+27, 0, ILI9341_BLACK);  
         tft.drawLine(135+(8*location)+28, 140, 135+(8*location)+28, 0, ILI9341_BLACK);
-
+        
+        //Check if laser x axis hit a target
         for (i = 0; i<3 ; ++i)
         {
           if (  (((target[i]-4) <= (135+(8*location)+26)) && ((135+(8*location)+26) <= (target[i]+4)))  || ((((135+(8*location)+28) >= (target[i]-4))) && ((135+(8*location)+28) <= (target[i]-1)))  )
