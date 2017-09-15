@@ -82,11 +82,11 @@ void drawTargets(int y)
   {
     if ( targetHits[i] == 0 && hitCounts[i] == 1 )
     {
-      tft.fillCircle(target[0], 4*(y), 3, ILI9341_RED);
-      tft.fillCircle(target[0], 4*(y), 4, ILI9341_RED);
-      tft.fillCircle(target[0], 4*(y), 5, ILI9341_YELLOW);
+      tft.fillCircle(target[i], 4*(y), 3, ILI9341_RED);
+      tft.fillCircle(target[i], 4*(y), 4, ILI9341_RED);
+      tft.fillCircle(target[i], 4*(y), 5, ILI9341_YELLOW);
       delay(10);
-      tft.fillCircle(target[0], 4*(y), 5, ILI9341_BLACK);
+      tft.fillCircle(target[i], 4*(y), 5, ILI9341_BLACK);
       z++;
     }
   }
@@ -99,7 +99,7 @@ void drawTargets(int y)
   if (targetfall >= 47)
   {
     for (i=0; i<3; ++i)
-    targetHits[i] = 1;
+    targetHits[i] = 0;
     hitCounts[i] = 0;
     tft.fillCircle(target[0], 4*(y), 4, ILI9341_BLACK);
     tft.fillCircle(target[1], 4*(y), 4, ILI9341_BLACK);
