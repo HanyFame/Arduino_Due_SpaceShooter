@@ -1,6 +1,6 @@
 # Arduino_Due SpaceShooter Game
 This is a simple Space/Aracade flying game built with Arduino Due and 2.8" SPI ILI9341 Touch Screen.
-# Components and Libraries
+## Components and Libraries
 * Using ILI9341_due and Utouch library: https://github.com/marekburiak/ILI9341_due, http://www.rinkydinkelectronics.com/library.php?id=92
 * Scheduler Library for SAM and SAMD Micrcontrollers to handle multiple loops for continous screen animations: https://playground.arduino.cc/Code/Scheduler
 * Any 2.8" SPI ILI9341 LCD with XPT2046 touch controller
