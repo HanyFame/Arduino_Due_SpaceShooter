@@ -187,19 +187,19 @@ void drawTargets(int y)
   
   if (targetfall >= 47) //Targets reached bottom of the screen
   {
-    if (z >= 500)  //Level2 after score of 500
+    if (z >= 500)  //Level 2 after score of 500
     {
       levelSpeed = 60;
     }
-    if (z >= 1000) //Level3 after  after score of 1000
+    if (z >= 1000) //Level 3 after score of 1000
     {
       levelSpeed = 50;
     }
-    if (z >= 2000) //Level4 after score of 2000
+    if (z >= 2000) //Level 4 after score of 2000
     {
       levelSpeed = 30;
     }
-    if (z >= 3000) //Level5nafter score of 3000
+    if (z >= 3000) //Level 5 after score of 3000
     {
       levelSpeed = 20;    
     }
