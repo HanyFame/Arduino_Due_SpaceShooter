@@ -167,6 +167,7 @@ void drawTargets(int y)
    
   delay(levelSpeed);
   
+  //Check if any of falling targets hit the ship bounderies, then call the ship crash function.
   if (targetfall >= 38 && targetfall <= 41)
   {
     for (i=0; i<8; ++i)
@@ -203,6 +204,7 @@ void drawTargets(int y)
       levelSpeed = 20;    
     }
     
+    //reset targets hit and gone arrays to generate 8 new targets from top
     for (i=0; i<8; ++i)
     {
       targetHits[i] = 1;
